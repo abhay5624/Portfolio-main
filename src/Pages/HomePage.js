@@ -16,7 +16,7 @@ export const HomePage = () => {
           <input type="password" name="" id="" placeholder="Password" />
           <p className="FP">Forget Password ?</p>
           <p className="nf">
-            Not your Account?Use guest mode to sign in privately{" "}
+            Not your Account? Use guest mode to sign in privately{" "}
           </p>
           <a href="#">Learn more</a>
         </Password>
@@ -25,9 +25,25 @@ export const HomePage = () => {
           <button>NEXT</button>
         </Flexbox>
       </Boxmain>
+      <Privacy>
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </Privacy>
     </div>
   );
 };
+const Privacy = styled.div`
+  margin: 10px;
+  margin-left: 50%;
+  display: flex;
+  width: 14%;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+`;
 const Flexbox = styled.div`
   display: flex;
   justify-content: space-between;
@@ -81,9 +97,10 @@ const Boxmain = styled.div`
   width: 30%;
   margin: 5%;
   margin-left: 30%;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  border: 2px solid #777;
+  border: 2px solid #bbb;
   border-radius: 5px;
   padding: 30px;
   text-align: center;
